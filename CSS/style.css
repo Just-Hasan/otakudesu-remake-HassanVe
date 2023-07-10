@@ -34,21 +34,17 @@ Letter Spacing :
 
 - Brand color (Primary): 
 - Tint : #f4f4f4, #e7f5ff
-- Shades :
+- Shades :  #0d0f10, #212529, #171a1d
 - Accent : #228be6
-- Greys : 
- #0d0f10
- #212529
- #495057 
- #868e96 
- #171a1d
+- Greys : #495057, #868e96, #f1f3f5
 
 --- 05 SHADOWS
 
 
 --- 06 BORDER-RADIUS
-
 Default : 9px
+8px (Container etx)
+4px (Img)
 
 
 --- 07 WHITESPACE
@@ -72,7 +68,7 @@ body {
   font-family: Rubik, sans-serif;
   line-height: 1;
   font-weight: 400;
-  background-color: #f4f4f4;
+  background-color: #212529;
   color: #555;
 }
 /* ///////////////////// */
@@ -82,6 +78,10 @@ body {
   display: grid;
   column-gap: 1.2rem;
   row-gap: 2.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--4-cols {
@@ -101,6 +101,11 @@ body {
 
 .container {
   max-width: 90rem;
+  margin: 0 auto;
+}
+
+.container-xl {
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -150,7 +155,7 @@ body {
 
 /* Header - Navigation */
 .navigation {
-  border-bottom: 5px solid royalblue;
+  border-bottom: 5px solid #228be6;
   background-color: #171a1d;
 }
 
@@ -158,6 +163,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .navigation-bar {
@@ -168,7 +174,7 @@ body {
 }
 
 .navigation-bar-active {
-  background-color: royalblue;
+  background-color: #228be6;
 }
 
 .navigation-bar a:link,
@@ -182,7 +188,7 @@ body {
 
 .navigation-bar a:hover,
 .navigation-bar a:active {
-  background-color: royalblue;
+  background-color: #228be6;
 }
 
 .search-bar {
@@ -195,10 +201,19 @@ body {
 /* ///////////////////// */
 /* MAIN-SECTION */
 /* ///////////////////// */
-.anime-container {
+
+.main-container {
   background-color: #171a1d;
-  padding: 1.2rem;
-  margin-top: 1.6rem;
+  grid-template-columns: 5.5fr 2.5fr;
+  padding: 1.6rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  border-radius: 0.8rem;
+}
+
+.anime-subheading {
+  grid-column: span 2;
+  border-radius: 0.4rem;
 }
 
 .anime-subheading {
@@ -232,12 +247,14 @@ body {
 
 /* Ongoing anime */
 .current-anime {
-  padding: 1.2rem;
+  padding: 0 1.2rem;
+  margin-top: 3.2rem;
 }
 
 .anime {
   position: relative;
   overflow: hidden;
+  border-radius: 0.4rem;
   /* padding-bottom: 150%; */
   aspect-ratio: 9/13;
   /* width dihitung oleh css nya sendiri karena kita menggunakan
@@ -303,6 +320,7 @@ body {
 
 .anime-names {
   line-height: 1.4;
+  padding: 0 1.6rem;
 }
 
 .anime:hover .anime-info {
@@ -315,4 +333,29 @@ body {
 }
 .anime img:hover {
   transform: scale(1);
+}
+
+/* Recommended anime */
+.recommended-anime-container {
+  margin-top: 6.4rem;
+}
+
+/* Aside section */
+.additional-container {
+  height: 100%;
+  background-color: #f1f3f5;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+aside img {
+  width: 100%;
+  border-radius: 0.4rem;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+/* Anime movies */
+.anime-movies h3 {
+  margin-bottom: 2.4rem;
 }
