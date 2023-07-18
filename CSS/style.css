@@ -194,7 +194,11 @@ body {
   background-color: #228be6;
 }
 
+.navigation-bar li {
+}
+
 .search-bar {
+  display: block;
   text-align: left;
   padding: 0.8rem 1.2rem;
   max-width: 100%;
@@ -293,8 +297,10 @@ body {
 
 .anime-icon,
 .anime-episodes,
-.anime-date {
+.anime-date,
+.anime-names {
   color: #f4f4f4;
+  font-size: 1.2rem;
 }
 
 .anime-date {
@@ -384,6 +390,34 @@ aside img {
   aspect-ratio: 9/16;
 }
 
+.recommended-anime-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.562);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+  line-height: 1.5;
+  padding: 1.6rem;
+}
+
+.recommended-anime-name {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.recommended-anime-score {
+  font-size: 1.6rem;
+  color: #fee715;
+}
+
 .anime-upcoming-img {
   position: relative;
   aspect-ratio: 16/9;
@@ -438,6 +472,14 @@ aside img {
 .anime-upcoming-img:hover .upcoming-anime-info {
   transform: scale(1);
   transform: translateX(0%);
+}
+
+.anime-recommended-img:hover .recommended-anime-info {
+  transform: translateY(0%);
+}
+
+.anime-movies-img:hover .recommended-anime-info {
+  transform: translateY(0%);
 }
 
 .upcoming-anime-info p {

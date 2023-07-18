@@ -9,27 +9,38 @@
   }
 
   .additional-container {
-    flex-direction: row;
-    column-gap: 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
   }
 
   .additional-container section {
     width: 100%;
   }
 
+  .anime-movies {
+  }
+
+  .anime-recommend {
+    grid-row: 2;
+    grid-column: span 2;
+    margin-top: 3.6rem;
+  }
+
   .anime-movies-img {
     position: relative;
-    aspect-ratio: 1/2;
   }
 
   .anime-recommendations {
-    flex-direction: column;
     row-gap: 1.6rem;
   }
-
   .anime-recommended-img {
+    aspect-ratio: 16/9;
+  }
+
+  .anime-recommended-img img {
     position: relative;
-    aspect-ratio: 1/1;
+    aspect-ratio: 16/9;
   }
 
   .anime-movies-recommended {
@@ -43,9 +54,57 @@
 
   .anime-upcoming-img {
     position: relative;
-    aspect-ratio: 1/1;
+  }
+  .anime-episodes,
+  .anime-date {
+    font-size: 1.2rem;
+  }
+  .anime-names {
+    font-size: 1.6rem;
+  }
+  /* Anime-recommended */
+  .recommended-anime-info {
+    /* line-height: 1.5; */
+    transform: translateX(-100%);
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 1.8rem;
+  }
+
+  .anime-recommended-img:hover .recommended-anime-info {
+    transform: translateX(0%);
+  }
+
+  .recommended-anime-name {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .recommended-anime-score {
+    font-size: 1.6rem;
+    color: #fee715;
   }
 }
 
-@media (width <= 52.25em) {
+/* WIDTH <= 852 PX */
+@media (width <= 53.25em) {
+  .navigation-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .navigation-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .navigation-bar a:link,
+  .navigation-bar a:visited {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navigation-bar a:hover,
+  .navigation-bar a:active {
+  }
 }
