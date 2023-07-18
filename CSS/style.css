@@ -80,6 +80,9 @@ body {
   row-gap: 2.4rem;
 }
 
+.grid--1-cols {
+  grid-template-columns: 1fr;
+}
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -255,8 +258,8 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 0.4rem;
-  /* padding-bottom: 150%; */
   aspect-ratio: 9/13;
+  /* padding-bottom: 150%; */
   /* width dihitung oleh css nya sendiri karena kita menggunakan
   grid-template-columns: repeat (5, 1fr)
   
@@ -266,14 +269,14 @@ body {
 
 .anime img,
 .anime-details,
-.anime-date {
+.anime-date,
+.position-absolute-img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .anime img {
-  transform: scale(1.2);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -346,16 +349,115 @@ body {
   background-color: #f1f3f5;
   padding: 0.8rem;
   border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 aside img {
-  width: 100%;
   border-radius: 0.4rem;
-  object-fit: cover;
-  aspect-ratio: 16/9;
 }
 
 /* Anime movies */
-.anime-movies h3 {
+.anime-movies-recommended {
+  row-gap: 0;
+}
+
+.anime-subheading {
   margin-bottom: 2.4rem;
 }
+
+.anime-movies-img {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+
+.anime-recommendations {
+  display: flex;
+  column-gap: 1.6rem;
+}
+
+.anime-recommended-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 9/16;
+}
+
+.anime-upcoming-img {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+
+.anime-recommended-img,
+.anime-movies-img,
+.anime-upcoming-img {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.anime-movies-img img,
+.anime-recommended-img img,
+.anime-upcoming-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+}
+
+.anime-recommended-img img,
+.anime-movies-img img,
+.anime-upcoming-img img {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.anime-recommended-img img:hover,
+.anime-movies-img img:hover {
+  transform: scale(1);
+}
+
+.upcoming-anime-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0d0f10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.anime-upcoming-img:hover .upcoming-anime-info {
+  transform: scale(1);
+  transform: translateX(0%);
+}
+
+.upcoming-anime-info p {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.anime-upcoming-name,
+.anime-upcoming-release {
+  color: #f4f4f4;
+}
+
+.anime-upcoming-release span {
+  color: #fee715;
+}
+
+/* .anime img {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.anime img:hover {
+  transform: scale(1);
+} */

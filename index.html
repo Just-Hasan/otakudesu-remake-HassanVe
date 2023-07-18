@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
     <title>Otakudesu &mdash; Download Anime</title>
   </head>
   <body>
@@ -60,17 +61,19 @@
             </aside>
             <!--  -->
             <div class="current-anime grid grid--5-cols">
-              <figure class="anime">
-                <img src="Images/majou.jpg" alt="Majo no Tabi-tabi picture" />
-                <p class="anime-details">
-                  <ion-icon name="tv-outline" class="anime-icon"></ion-icon>
-                  <span class="anime-episodes">Episodes 1</span>
-                </p>
-                <p class="anime-date">07 Jul</p>
-                <div class="anime-info">
-                  <p class="anime-names">Majou no Tabi-tabi</p>
-                </div>
-              </figure>
+              <a href="https://otakudesu.lol/anime/majo-tabitabi-sub-indo/">
+                <figure class="anime">
+                  <img src="Images/majou.jpg" alt="Majo no Tabi-tabi picture" />
+                  <p class="anime-details">
+                    <ion-icon name="tv-outline" class="anime-icon"></ion-icon>
+                    <span class="anime-episodes">Episodes 1</span>
+                  </p>
+                  <p class="anime-date">07 Jul</p>
+                  <div class="anime-info">
+                    <p class="anime-names">Majou no Tabi-tabi</p>
+                  </div>
+                </figure>
+              </a>
               <!--  -->
               <figure class="anime">
                 <img src="Images/bleach.jpg" alt="Bleach Anime Picture" />
@@ -333,7 +336,40 @@
           <section class="anime-movies">
             <h3 class="anime-subheading">NEW MOVIES🔥</h3>
             <figure class="anime-movies-img">
-              <img src="Images/suzume.jpg" alt="" />
+              <img src="Images/suzume.jpg" alt="Suzume no Tojimori movies" />
+            </figure>
+          </section>
+          <!--  -->
+          <section class="anime-movies">
+            <h3 class="anime-subheading">RECOMMENDED ANIME</h3>
+            <div class="anime-recommendations">
+              <figure class="anime-recommended-img">
+                <img
+                  src="Images/violet_1.jpg"
+                  alt="Violet Evergarden Picture"
+                />
+              </figure>
+              <figure class="anime-recommended-img">
+                <img src="Images/chainsaw.png" alt="Chainsaw Man Picture" />
+              </figure>
+            </div>
+          </section>
+          <!--  -->
+          <section class="anime-news">
+            <h3 class="anime-subheading">UPCOMING ANIME</h3>
+            <figure class="anime-upcoming-img">
+              <img
+                src="Images/Bleach thousand year blood war.webp"
+                alt="Bleach thousand year blood war images"
+              />
+              <div class="upcoming-anime-info">
+                <p class="anime-upcoming-name">
+                  Bleach Thousand Years Blood War
+                </p>
+                <p class="anime-upcoming-release">
+                  Release Date <span>August 13th 2024</span>
+                </p>
+              </div>
             </figure>
           </section>
         </aside>
@@ -349,5 +385,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="JavaScript/script.js" defer></script>
   </body>
 </html>

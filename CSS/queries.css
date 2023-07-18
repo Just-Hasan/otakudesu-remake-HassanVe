@@ -1,0 +1,51 @@
+@media (width <= 68.75em) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .anime-container {
+    margin-bottom: 9.6rem;
+  }
+
+  .additional-container {
+    flex-direction: row;
+    column-gap: 3.2rem;
+  }
+
+  .additional-container section {
+    width: 100%;
+  }
+
+  .anime-movies-img {
+    position: relative;
+    aspect-ratio: 1/2;
+  }
+
+  .anime-recommendations {
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+
+  .anime-recommended-img {
+    position: relative;
+    aspect-ratio: 1/1;
+  }
+
+  .anime-movies-recommended {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .anime-movies-recommended h3 {
+    grid-column: span 3;
+  }
+
+  .anime-upcoming-img {
+    position: relative;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media (width <= 52.25em) {
+}
