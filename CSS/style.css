@@ -137,6 +137,7 @@ body {
 .grup-fb:visited {
   background-color: #495057;
   padding: 0.6rem 1.2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .lapor-link:hover,
@@ -300,7 +301,7 @@ body {
 .anime-date,
 .anime-names {
   color: #f4f4f4;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .anime-date {
@@ -482,24 +483,66 @@ aside img {
   transform: translateY(0%);
 }
 
-.upcoming-anime-info p {
-  text-align: center;
-  font-size: 1.6rem;
-}
-
 .anime-upcoming-name,
 .anime-upcoming-release {
+  text-align: center;
   color: #f4f4f4;
+  font-size: 1.9rem;
 }
 
 .anime-upcoming-release span {
   color: #fee715;
 }
 
-/* .anime img {
-  transform: scale(1.2);
+/* /////// FOOTER-SECTION \\\\\\\\ */
+.footer {
+  background-color: #171a1d;
+}
+
+.footer-container {
+  margin-top: 9.6rem;
+  padding: 3.2rem 0rem;
+}
+
+.footer-header,
+.footer-description {
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.footer-header {
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+  color: #228be6;
+}
+
+.footer-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+.footer-social a:link,
+.footer-social a:visited {
+  font-size: 3.2rem;
+  color: #f4f4f4;
   transition: all 0.3s ease-in-out;
 }
-.anime img:hover {
-  transform: scale(1);
-} */
+
+.footer-social a:hover,
+.footer-social a:active {
+  font-size: 3.2rem;
+  color: #228be6;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 1.6rem 0;
+}
