@@ -95,6 +95,10 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.hidden {
+  display: none;
+}
+
 /* ///////////////////// */
 /* HEADER-SECTION */
 /* ///////////////////// */
@@ -204,6 +208,10 @@ body {
   padding: 0.8rem 1.2rem;
   max-width: 100%;
   border: none;
+}
+/* MOBILE-NAV-INITIALIZATION */
+.menu {
+  display: none;
 }
 
 /* ///////////////////// */

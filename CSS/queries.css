@@ -220,6 +220,38 @@
   }
 }
 
+/* WIDTH 448PX (Starting of Mobile navigation) */
+@media (width <= 28em) {
+  .navigation-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .navigation-bar {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    border: none;
+    background-color: #171a1d;
+    grid-column: 2/-1;
+    padding: 1rem;
+  }
+
+  .btn-nav-icon {
+    border: none;
+    color: #f4f4f4;
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .search-bar {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+}
+
 /* WIDTH 400PX */
 @media (width <= 25em) {
   .anime-details {
