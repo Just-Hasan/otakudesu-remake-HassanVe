@@ -209,7 +209,18 @@
   .recommended-anime-score {
     font-size: 1rem;
   }
+
+  .current-anime {
+    padding: 0rem;
+    row-gap: 1.2rem;
+  }
+
+  .aside-link {
+    font-size: 1rem;
+  }
 }
+
+/* WIDTH 400PX */
 @media (width <= 25em) {
   .anime-details {
     gap: 0.4rem;
@@ -264,5 +275,10 @@
 
   .anime-news {
     grid-row: 3;
+  }
+
+  .current-anime {
+    padding: 0rem;
+    gap: 0.8rem;
   }
 }
