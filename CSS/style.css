@@ -104,6 +104,8 @@ body {
 /* ///////////////////// */
 .header {
   background-color: #0d0f10;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .container {
@@ -118,10 +120,16 @@ body {
 
 /* Header - ASIDE */
 .aside {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   padding: 1.2rem 2.4rem;
   align-items: center;
+  width: 100%;
+}
+
+.aside div:nth-child(2) {
+  justify-self: end;
 }
 
 .aside-link {
@@ -199,7 +207,7 @@ body {
   background-color: #228be6;
 }
 
-.navigation-bar li {
+.navigation-bar a:focus {
 }
 
 .search-bar {
@@ -209,8 +217,22 @@ body {
   max-width: 100%;
   border: none;
 }
+
 /* MOBILE-NAV-INITIALIZATION */
 .menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.btn-nav-icon {
+  color: #f4f4f4;
+  font-size: 3.6rem;
+}
+
+.btn-nav-icon[name="close-outline"] {
   display: none;
 }
 
