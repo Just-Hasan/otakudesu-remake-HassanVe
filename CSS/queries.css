@@ -320,8 +320,13 @@
   }
 
   /* CLOSE-BTN */
-  .navigation-bar li:last-child {
+  nav.navigation
+    div.navigation-container
+    ul.navigation-bar
+    li
+    a.nav-link.close-nav-link {
     display: block;
+    border-radius: 1.1rem;
   }
 }
 

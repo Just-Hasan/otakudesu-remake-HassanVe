@@ -223,11 +223,16 @@ body {
   border: none;
 }
 
-.nav-link[name="close-nav"] {
+nav.navigation
+  div.navigation-container
+  ul.navigation-bar
+  li
+  a.nav-link.close-nav-link {
   display: none;
   border-radius: 1.1rem;
-  color: #0d0f10;
-  background-color: #333;
+  color: #228be6;
+  background-color: #f4f4f4;
+  font-weight: 700;
 }
 
 /* MOBILE-NAV-INITIALIZATION */
