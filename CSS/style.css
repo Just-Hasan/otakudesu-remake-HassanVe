@@ -207,9 +207,6 @@ body {
   background-color: #228be6;
 }
 
-.navigation-bar a:focus {
-}
-
 .search-bar {
   display: block;
   text-align: left;
@@ -331,7 +328,7 @@ body {
 .anime-date,
 .anime-names {
   color: #f4f4f4;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .anime-date {
