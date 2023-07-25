@@ -6,9 +6,15 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/queries.css" />
     <title>Otakudesu &mdash; Download Anime</title>
+
+    <script
+      defer
+      src=" https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+    "
+    ></script>
   </head>
   <body>
-    <header class="header nav-open">
+    <header class="header">
       <aside class="aside container">
         <div>
           <a href="#" class="aside-link cara-download">Cara Download</a>
@@ -27,12 +33,19 @@
       <nav class="navigation">
         <div class="navigation-container container">
           <ul class="navigation-bar">
-            <li><a href="#" class="navigation-bar-active">HOME</a></li>
-            <li><a href="#">ANIME LIST</a></li>
-            <li><a href="#">JADWAL RILIS</a></li>
-            <li><a href="#">ONGOING ANIME</a></li>
-            <li><a href="#">GENRE LIST</a></li>
-            <li><a href="#">MOVIES</a></li>
+            <li><a href="#" class="navigation-bar-active nav-link">HOME</a></li>
+            <li><a href="#" class="nav-link">ANIME LIST</a></li>
+            <li><a href="#" class="nav-link">JADWAL RILIS</a></li>
+            <li><a href="#ongoing-animes" class="nav-link">ONGOING</a></li>
+            <li><a href="#finished-animes" class="nav-link">FINISHED</a></li>
+            <li>
+              <a href="#movies-upcoming-recommended" class="nav-link">MOVIES</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link close-nav-link" name="close-nav"
+                >CLOSE</a
+              >
+            </li>
           </ul>
           <!-- MOBILE-NAVIGATION -->
           <button class="menu">
@@ -63,7 +76,7 @@
         </h3>
         <div class="anime-container">
           <!-- Ongoing anime -->
-          <div class="ongoing-anime-container">
+          <div class="ongoing-anime-container" id="ongoing-animes">
             <aside class="anime-current-status">
               <a href="#" class="anime-status">Ongoing Anime</a>
               <a href="#" class="anime-check"
@@ -221,7 +234,7 @@
             </div>
           </div>
           <!-- Recommended anime -->
-          <div class="recommended-anime-container">
+          <div class="recommended-anime-container" id="finished-animes">
             <aside class="anime-current-status">
               <a href="#" class="anime-status">Finished Anime</a>
               <a href="#" class="anime-check">Cek anime lainnya &rarr;</a>
@@ -379,7 +392,7 @@
             </div>
           </div>
         </div>
-        <aside class="additional-container">
+        <aside class="additional-container" id="movies-upcoming-recommended">
           <section class="anime-movies">
             <h3 class="anime-subheading">NEW MOVIES🔥</h3>
             <figure class="anime-movies-img">
@@ -394,7 +407,7 @@
             </figure>
           </section>
           <!--  -->
-          <section class="anime-recommend">
+          <section class="anime-recommend" id="">
             <h3 class="anime-subheading">RECOMMENDED ANIME</h3>
             <div class="anime-recommendations">
               <figure class="anime-recommended-img">
@@ -421,7 +434,7 @@
             </div>
           </section>
           <!--  -->
-          <section class="anime-news">
+          <section class="anime-news" id="animes-news">
             <h3 class="anime-subheading">UPCOMING ANIME</h3>
             <figure class="anime-upcoming-img">
               <img
