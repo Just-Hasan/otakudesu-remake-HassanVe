@@ -5,6 +5,18 @@
     <!-- CRUCIAL TAGS FOR RESPONSIVE👇 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ----------------------------- -->
+
+    <!-- META DESCRIPTION -->
+    <meta
+      name="Description"
+      content="Otakudesu is a website where you can enjoy the latest anime with high quality for free"
+    />
+    <!--  -->
+
+    <!-- ADRESS THEME COLOR -->
+    <meta name="theme-color" content="#0d0f10" />
+    <!--  -->
+
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/queries.css" />
     <title>Otakudesu &mdash; Download Anime</title>
@@ -57,14 +69,16 @@
             </li>
           </ul>
           <!-- MOBILE-NAVIGATION -->
-          <button class="menu">
+          <button class="menu" aria-label="Mobile Icon">
             <ion-icon
               class="btn-nav-icon menu-icon"
               name="menu-outline"
+              aria-label="Mobile Menu Icon"
             ></ion-icon>
             <ion-icon
               class="btn-nav-icon close-icon"
               name="close-outline"
+              aria-label="Mobile Close Icon"
             ></ion-icon>
           </button>
           <input
@@ -418,10 +432,13 @@
               </figure>
             </div>
             <div class="buttons">
-              <button class="previousBtn">
+              <button
+                class="previousBtn"
+                aria-label="Anime Movies Previous Button"
+              >
                 <ion-icon name="arrow-back-outline"></ion-icon>
               </button>
-              <button class="nextBtn">
+              <button class="nextBtn" aria-label="Anime Movies Next Button">
                 <ion-icon name="arrow-forward-outline"></ion-icon>
               </button>
             </div>
