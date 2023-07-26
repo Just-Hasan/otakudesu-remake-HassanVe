@@ -19,27 +19,27 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
-					"line": 78,
+					"line": 84,
 					"column": 0,
 					"label": "Ongoing-Animes"
 				},
 				{
-					"line": 236,
+					"line": 242,
 					"column": 0,
 					"label": "Finished Animes"
 				},
 				{
-					"line": 395,
+					"line": 401,
 					"column": 0,
 					"label": "Anime-Movies"
 				},
 				{
-					"line": 409,
+					"line": 415,
 					"column": 0,
 					"label": "Anime-Recommended"
 				},
 				{
-					"line": 436,
+					"line": 442,
 					"column": 0,
 					"label": "Anime-News"
 				}
