@@ -3,12 +3,16 @@
     {
       "src": "Images/Icons ETC/android-icons-sm.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable",
+      "density": "1.0"
     },
     {
       "src": "Images/Icons ETC/android-icons-md.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable",
+      "density": "1.0"
     }
   ]
 }
