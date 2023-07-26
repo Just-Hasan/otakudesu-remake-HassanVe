@@ -7,6 +7,7 @@ const navLink = document.querySelectorAll(".nav-link");
 const movieImage = document.getElementById("movieImage");
 const previousButton = document.querySelector(".previousBtn");
 const nextButton = document.querySelector(".nextBtn");
+const movieContainer = document.querySelector(".anime-movies-img");
 //
 
 previousButton.addEventListener("click", () => {
