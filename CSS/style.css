@@ -416,6 +416,7 @@ aside img {
 /* Anime movies */
 .anime-movies {
   position: relative;
+  height: 25%;
 }
 
 .anime-movies-recommended {
@@ -424,6 +425,52 @@ aside img {
 
 .anime-subheading {
   margin-bottom: 2.4rem;
+}
+
+.movie-container {
+  position: relative;
+  height: 100%;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.button {
+  top: 30%;
+  color: #f1f3f5;
+  background-color: #228be6c2;
+  position: absolute;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0.8rem;
+  border: none;
+}
+
+.previousBtn {
+  left: 0;
+}
+
+.nextBtn {
+  right: 0;
+}
+
+.btn-icon {
+  font-size: 1.8rem;
 }
 
 .anime-movies-img {
@@ -605,30 +652,3 @@ aside img {
 }
 
 /* TESTING */
-.buttons {
-  position: absolute;
-  top: 62.5%;
-  transform: translateY(-50%);
-  padding: 0 1rem;
-  width: 100%;
-  display: flex;
-
-  justify-content: space-between;
-}
-
-.buttons button {
-  background-color: #228be6d0;
-  height: 2.4rem;
-  width: 2.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1.1rem;
-  border: none;
-  font-size: 1.6rem;
-  filter: drop-shadow(0px 0px 2px #333);
-}
-
-.buttons ion-icon {
-  color: #f4f4f4;
-}

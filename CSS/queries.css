@@ -24,6 +24,10 @@
     margin-top: 3.6rem;
   }
 
+  .anime-movies {
+    height: 100%;
+  }
+
   .anime-movies-img {
     position: relative;
   }

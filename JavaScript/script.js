@@ -3,16 +3,9 @@ const mobileMenu = document.querySelector(".menu-icon");
 const closeMenu = document.querySelector(".close-icon");
 const navLink = document.querySelectorAll(".nav-link");
 
-// Selected for carousel
 const movieImage = document.getElementById("movieImage");
-const previousButton = document.querySelector(".previousBtn");
-const nextButton = document.querySelector(".nextBtn");
 const movieContainer = document.querySelector(".anime-movies-img");
 //
-
-previousButton.addEventListener("click", () => {
-  console.log("You click the previous button");
-});
 
 mobileMenu.addEventListener("click", () => {
   header.classList.add("nav-open");
@@ -54,57 +47,38 @@ allLinks.forEach((link) => {
 
 //
 
-//////////////////////
-// Making the carousel
-
-// Define an array of image sources and their corresponding anime info
-
-const images = [
-  {
-    src: "Images/Compressed/suzume_1.webp",
-    name: "Suzume no Tojimori",
-    score: "Score: 8.8",
-  },
-  {
-    src: "Images/Compressed/tenki no ko.webp",
-    name: "Tenki no Ko",
-    score: "Score: 8.5",
-  },
-  {
-    src: "Images/Compressed/kimi no Nawa.webp",
-    name: "Kimi no Nawa",
-    score: "Score: 9.5",
-  },
-];
-
 let currentIndex = 0;
 
-// Function to update the movie image and anime info
-const updateMovieInfo = function () {
-  movieImage.src = images[currentIndex].src;
-  document.querySelector(".recommended-anime-name").textContent =
-    images[currentIndex].name;
-  document.querySelector(".recommended-anime-score").textContent =
-    images[currentIndex].score;
+const slides = document.querySelectorAll(".slide");
+const previousBtn = document.querySelector(".previousBtn");
+const nextBtn = document.querySelector(".nextBtn");
+
+const movingSlider = function (curIndex) {
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(${100 * (i - curIndex)}%)`;
+  });
 };
 
-// Function to handle next button click
-const nextImage = function () {
-  currentIndex = (currentIndex + 1) % images.length;
-  updateMovieInfo();
+const nextSlide = function () {
+  if (currentIndex >= slides.length - 1) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
+  movingSlider(currentIndex);
 };
 
-// Function to handle previous button click
-const previousImage = function () {
-  currentIndex = (currentIndex - 1) % images.length;
-  updateMovieInfo();
-};
+movingSlider(0);
 
-// Event listeners for button click
-nextButton.addEventListener("click", nextImage);
-previousButton.addEventListener("click", previousImage);
+nextBtn.addEventListener("click", (e) => {
+  nextSlide();
+});
 
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % images.length;
-  updateMovieInfo();
+previousBtn.addEventListener("click", () => {
+  currentIndex === 0 ? (currentIndex = 0) : currentIndex--;
+  movingSlider(currentIndex);
+});
+
+setInterval(function () {
+  nextSlide();
 }, 3000);
