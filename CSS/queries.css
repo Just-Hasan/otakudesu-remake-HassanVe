@@ -179,10 +179,18 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
   }
+
+  .btn-icon {
+    font-size: 1.2rem;
+  }
 }
 
 /* WIDTH 500PX */
 @media (width <= 31.25em) {
+  .button {
+    top: 28%;
+  }
+
   .anime-details {
     padding: 0.6rem;
   }
@@ -214,6 +222,10 @@
 
   .aside-link {
     font-size: 1rem;
+  }
+
+  .btn-icon {
+    font-size: 0.8rem;
   }
 }
 
@@ -329,6 +341,18 @@
 
 /* WIDTH 400PX */
 @media (width <= 25em) {
+  .movie-container {
+    height: 20rem;
+  }
+
+  .button {
+    top: 35%;
+  }
+
+  .btn-icon {
+    font-size: 1.2rem;
+  }
+
   .anime-details {
     gap: 0.4rem;
     padding: 0.3rem;
