@@ -24,17 +24,17 @@
 					"label": "Ongoing-Animes"
 				},
 				{
-					"line": 256,
+					"line": 255,
 					"column": 0,
 					"label": "Finished Animes"
 				},
 				{
-					"line": 415,
+					"line": 267,
 					"column": 0,
 					"label": "Anime-Movies"
 				},
 				{
-					"line": 536,
+					"line": 388,
 					"column": 0,
 					"label": "Anime-News"
 				}
